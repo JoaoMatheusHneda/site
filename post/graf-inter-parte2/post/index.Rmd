@@ -103,7 +103,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Qual é o objetivo desse post?
 
-Esse texto foi escrito como parte de uma série de posts para mostrar algumas bibliotecas do R que auxiliam na construção de gráficos interativos. Caso não tenha lido a parte 1 dessa série de posts, consulte o link [Gráficos Interativos em R - Parte 1 - Plotly e DyGraphs](/site/post/graf-inter-parte1/post/). Se já fez a leitura da parte 1, o texto da parte 2 foi montado para mostrar mais detalhes sobre gráficos interativos com o pacote **highcharter**.
+Esse texto foi escrito como parte de uma série de posts para mostrar algumas bibliotecas do R que auxiliam na construção de gráficos interativos. Caso não tenha lido a parte 1 dessa série de posts, consulte o link [Gráficos Interativos em R - Parte 1 - Plotly e DyGraphs](/site/post/graf-inter-parte1/post/). Se já fez a leitura da parte 1, o texto da parte 2 foi montada para mostrar mais detalhes sobre gŕaficos interativos com o pacote **highcharter**.
 
 - Para acessar os códigos utilizados que geram este post, acesse o link abaixo:
 
