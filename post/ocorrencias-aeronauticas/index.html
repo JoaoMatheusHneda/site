@@ -1,0 +1,1287 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.4.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="João Matheus S. Krüger Taborda Hneda" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="Quando o assunto é aviação civil e transporte aéreo, vários eventos ou intercorrências podem ocorrer pelo percurso. Formalmente falando, esses eventos podem ser chamados de ocorrências aeronáuticas. O trabalho consiste em gerar documentos resultantes da exploração da base de dados &#34;Ocorrências Aeronáuticas na Aviação Civil Brasileira&#34;." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/site/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.css" integrity="" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/site/css/wowchemy.512574799414e7d36471486881070b0f.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/site/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/site/media/icon_hub666e112c0998beeb7a2ec6a255d44fb_84749_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/site/media/icon_hub666e112c0998beeb7a2ec6a255d44fb_84749_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="João Matheus Hneda" />
+  <meta property="og:url" content="https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/" />
+  <meta property="og:title" content="Geração de relatórios e apresentações com R - Aplicação prática no contexto de ocorrências aeronáuticas | João Matheus Hneda" />
+  <meta property="og:description" content="Quando o assunto é aviação civil e transporte aéreo, vários eventos ou intercorrências podem ocorrer pelo percurso. Formalmente falando, esses eventos podem ser chamados de ocorrências aeronáuticas. O trabalho consiste em gerar documentos resultantes da exploração da base de dados &#34;Ocorrências Aeronáuticas na Aviação Civil Brasileira&#34;." /><meta property="og:image" content="https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/featured.png" />
+    <meta property="twitter:image" content="https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/featured.png" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2022-06-19T00:00:00&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2022-06-19T00:00:00&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/"
+  },
+  "headline": "Geração de relatórios e apresentações com R - Aplicação prática no contexto de ocorrências aeronáuticas",
+  
+  "image": [
+    "https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/featured.png"
+  ],
+  
+  "datePublished": "2022-06-19T00:00:00Z",
+  "dateModified": "2022-06-19T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "João Matheus S. Krüger Taborda Hneda"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "João Matheus Hneda",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://joaomatheushneda.github.io/site/media/icon_hub666e112c0998beeb7a2ec6a255d44fb_84749_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "Quando o assunto é aviação civil e transporte aéreo, vários eventos ou intercorrências podem ocorrer pelo percurso. Formalmente falando, esses eventos podem ser chamados de ocorrências aeronáuticas. O trabalho consiste em gerar documentos resultantes da exploração da base de dados \"Ocorrências Aeronáuticas na Aviação Civil Brasileira\"."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>Geração de relatórios e apresentações com R - Aplicação prática no contexto de ocorrências aeronáuticas | João Matheus Hneda</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="62c1b11d4f872580f41ac7527b0c4655" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/site/js/wowchemy-init.min.13d3c1ccc66961c64e937f4e854fdd1e.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<header class="header--fixed">
+  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+    <div class="container-xl">
+
+      
+      <div class="d-none d-lg-inline-flex">
+        <a class="navbar-brand" href="/site/">João Matheus Hneda</a>
+      </div>
+      
+
+      
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+              data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+      <span><i class="fas fa-bars"></i></span>
+      </button>
+      
+
+      
+      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+        <a class="navbar-brand" href="/site/">João Matheus Hneda</a>
+      </div>
+      
+
+      
+      
+      <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+        
+        <ul class="navbar-nav d-md-inline-flex">
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/site/#about"><span>Home</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/site/#experience"><span>Experiência</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/site/#posts"><span>Posts</span></a>
+          </li>
+
+          
+          
+
+          
+
+          
+          
+          
+            
+          
+
+          
+
+          
+          
+          
+          
+
+          
+            
+              
+              
+            
+            
+              
+              
+              
+                
+              
+              
+            
+          
+
+          <li class="nav-item">
+            <a class="nav-link " href="/site/#contact"><span>Contato</span></a>
+          </li>
+
+          
+          
+
+        
+
+          
+        </ul>
+      </div>
+
+      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+        
+        
+          
+        
+
+        
+        
+        <li class="nav-item">
+          <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+        </li>
+        
+
+        
+        
+        <li class="nav-item dropdown theme-dropdown">
+          <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+            <i class="fas fa-moon" aria-hidden="true"></i>
+          </a>
+          <div class="dropdown-menu">
+            <a href="#" class="dropdown-item js-set-theme-light">
+              <span>Light</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-dark">
+              <span>Dark</span>
+            </a>
+            <a href="#" class="dropdown-item js-set-theme-auto">
+              <span>Automatic</span>
+            </a>
+          </div>
+        </li>
+        
+
+        
+        
+
+      </ul>
+
+    </div>
+  </nav>
+</header>
+
+
+  </div>
+
+  <div class="page-body">
+    <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+<div class="article-container pt-3">
+  <h1>Geração de relatórios e apresentações com R - Aplicação prática no contexto de ocorrências aeronáuticas</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 19, 2022
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/site/category/r/">R</a>, <a href="/site/category/graficos/">Gráficos</a>, <a href="/site/category/relatorios/">Relatórios</a>, <a href="/site/category/apresentacoes/">Apresentações</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 518px;">
+  <div style="position: relative">
+    <img src="/site/post/ocorrencias-aeronauticas/featured_hu4da252b077e18d05f2a96eeeb881cf42_1659550_720x2500_fit_q75_h2_lanczos_3.webp" width="720" height="518" alt="" class="featured-image">
+    <span class="article-header-caption">Gládio Alado - Símbolo da Força Aérea Brasileira</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <h1 id="introdução">Introdução</h1>
+<p>Quando o assunto é aviação civil e transporte aéreo, vários eventos ou intercorrências podem ocorrer pelo percurso. Formalmente falando, esses eventos podem ser chamados de ocorrências aeronáuticas.</p>
+<p>Ocorrência aeronáutica é qualquer evento envolvendo aeronave que poderá ser classificado como incidente, incidente grave ou acidente <a href="https://www3.fmb.unesp.br/sete/pluginfile.php/20354/mod_page/content/2/A_Investigacao_de_acidentes_aeronauticos_Conforme_a_Lei_no_7.pdf" target="_blank" rel="noopener">(link)</a>, permitindo ao SIPAER (Sistema de Investigação e Prevenção de Acidentes Aeronáuticos) a adoção dos procedimentos pertinentes.</p>
+<ul>
+<li>Incidente é toda ocorrência aeronáutica que não chega a se caracterizar como um acidente mas que afeta ou possa afetar a segurança da operação.</li>
+<li>Incidente grave é um incidente que ocorre sob circunstâncias em que um acidente quase ocorreu.</li>
+<li>Acidente é uma ocorrência tal que qualquer pessoa sofra lesão grave ou morra.</li>
+</ul>
+<p>Dadas essas possíveis classificações de uma ocorrência aeronáutica, é importante conhecer fatores que estão associados a ocorrências aeronáuticas perigosas com objetivos de prevenção.</p>
+<h1 id="apresentação-do-problema">Apresentação do problema</h1>
+<ul>
+<li>
+<p>O trabalho consiste em gerar documentos resultantes da exploração da base de dados &ldquo;Ocorrências Aeronáuticas na Aviação Civil Brasileira&rdquo;. Três documentos foram gerados, os quais são:</p>
+<ul>
+<li>1 relatório em pdf (com gráficos estáticos)</li>
+<li>1 relatório em html (com gráficos interativos)</li>
+<li>1 apresentação em html (com gráficos interativos)</li>
+</ul>
+</li>
+<li>
+<p>Para acessar os documentos, acesse os links abaixo:</p>
+<ul>
+<li>Relatório em pdf: <a href="https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/post/4.Relatorio/pdf/index.pdf" target="_blank" rel="noopener">https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/post/4.Relatorio/pdf/index.pdf</a></li>
+<li>Relatório em html: <a href="https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/post/4.Relatorio/html/index.html" target="_blank" rel="noopener">https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/post/4.Relatorio/html/index.html</a></li>
+<li>Apresentação em html: <a href="https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/post/5.Apresentacao/index.html" target="_blank" rel="noopener">https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/post/5.Apresentacao/index.html</a></li>
+</ul>
+</li>
+<li>
+<p>Para acessar os diretórios, banco de dados e códigos utilizados para gerar os relatórios e apresentação, acesse o link abaixo:</p>
+</li>
+</ul>
+<h1 id="referências">Referências</h1>
+<ul>
+<li><a href="https://www3.fmb.unesp.br/sete/pluginfile.php/20354/mod_page/content/2/A_Investigacao_de_acidentes_aeronauticos_Conforme_a_Lei_no_7.pdf" target="_blank" rel="noopener">A Investigação de acidentes aeronáuticos</a><br></li>
+<li><a href="https://dados.gov.br/dataset/ocorrencias-aeronauticas-da-aviacao-civil-brasileira" target="_blank" rel="noopener">CENIPA - Ocorrências Aeronáuticas na Aviação Civil Brasileira</a><br></li>
+<li><a href="https://www.tidyverse.org/" target="_blank" rel="noopener">tidyverse</a><br></li>
+<li><a href="https://dplyr.tidyverse.org/" target="_blank" rel="noopener">dplyr</a><br></li>
+<li><a href="https://ggplot2.tidyverse.org/" target="_blank" rel="noopener">ggplot2</a><br></li>
+<li><a href="https://dbi.r-dbi.org/" target="_blank" rel="noopener">DBI</a> <br></li>
+<li><a href="https://rpostgres.r-dbi.org/" target="_blank" rel="noopener">RPostgres</a> <br></li>
+<li><a href="http://www.htmlwidgets.org/index.html" target="_blank" rel="noopener">htmlwidgets</a><br></li>
+<li><a href="https://plot.ly/r" target="_blank" rel="noopener">Plotly</a><br></li>
+<li><a href="https://www.highcharts.com/" target="_blank" rel="noopener">HighCharts</a><br></li>
+<li><a href="http://jkunst.com/highcharter/" target="_blank" rel="noopener">HighCharter</a><br></li>
+<li><a href="https://www.tmbish.me/lab/highcharter-cookbook/" target="_blank" rel="noopener">HighCharter Cookbook - Tom Bishop</a><br></li>
+<li><a href="https://rmarkdown.rstudio.com" target="_blank" rel="noopener">R Markdown</a><br></li>
+<li><a href="http://yihui.name/knitr" target="_blank" rel="noopener">knitr</a><br></li>
+<li><a href="https://github.com/yihui/xaringan" target="_blank" rel="noopener">yihui/xaringan</a><br></li>
+<li><a href="https://github.com/gadenbuie/xaringanthemer" target="_blank" rel="noopener">gadenbuie/xaringanthemer</a><br></li>
+<li><a href="https://github.com/gadenbuie/xaringanExtra" target="_blank" rel="noopener">gadenbuie/xaringanExtra</a><br></li>
+<li><a href="https://r-ladies-sao-paulo.github.io/xaringan/slides.html#7" target="_blank" rel="noopener">Imagem: Ilustração por Allison Horst - Twitter: @allison_horst - Adaptado de Wickham e Grolemund, 2017</a><br></li>
+<li><a href="https://hbctraining.github.io/In-depth-NGS-Data-Analysis-Course/sessionVI/lessons/knitr_rmarkdown.html" target="_blank" rel="noopener">Imagem: Reproducible reports in R</a></li>
+</ul>
+
+    </div>
+
+    
+
+
+
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/site/tag/r/">R</a>
+  
+  <a class="badge badge-light" href="/site/tag/graficos/">Gráficos</a>
+  
+  <a class="badge badge-light" href="/site/tag/graficos-interativos/">Gráficos Interativos</a>
+  
+  <a class="badge badge-light" href="/site/tag/plotly/">Plotly</a>
+  
+</div>
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/&amp;text=Gera%c3%a7%c3%a3o%20de%20relat%c3%b3rios%20e%20apresenta%c3%a7%c3%b5es%20com%20R%20-%20Aplica%c3%a7%c3%a3o%20pr%c3%a1tica%20no%20contexto%20de%20ocorr%c3%aancias%20aeron%c3%a1uticas" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/&amp;t=Gera%c3%a7%c3%a3o%20de%20relat%c3%b3rios%20e%20apresenta%c3%a7%c3%b5es%20com%20R%20-%20Aplica%c3%a7%c3%a3o%20pr%c3%a1tica%20no%20contexto%20de%20ocorr%c3%aancias%20aeron%c3%a1uticas" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=Gera%c3%a7%c3%a3o%20de%20relat%c3%b3rios%20e%20apresenta%c3%a7%c3%b5es%20com%20R%20-%20Aplica%c3%a7%c3%a3o%20pr%c3%a1tica%20no%20contexto%20de%20ocorr%c3%aancias%20aeron%c3%a1uticas&amp;body=https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/&amp;title=Gera%c3%a7%c3%a3o%20de%20relat%c3%b3rios%20e%20apresenta%c3%a7%c3%b5es%20com%20R%20-%20Aplica%c3%a7%c3%a3o%20pr%c3%a1tica%20no%20contexto%20de%20ocorr%c3%aancias%20aeron%c3%a1uticas" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=Gera%c3%a7%c3%a3o%20de%20relat%c3%b3rios%20e%20apresenta%c3%a7%c3%b5es%20com%20R%20-%20Aplica%c3%a7%c3%a3o%20pr%c3%a1tica%20no%20contexto%20de%20ocorr%c3%aancias%20aeron%c3%a1uticas%20https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://joaomatheushneda.github.io/site/post/ocorrencias-aeronauticas/&amp;title=Gera%c3%a7%c3%a3o%20de%20relat%c3%b3rios%20e%20apresenta%c3%a7%c3%b5es%20com%20R%20-%20Aplica%c3%a7%c3%a3o%20pr%c3%a1tica%20no%20contexto%20de%20ocorr%c3%aancias%20aeron%c3%a1uticas" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://joaomatheushneda.github.io/site/"><img class="avatar mr-3 avatar-circle" src="/site/author/joao-matheus-s.-kruger-taborda-hneda/avatar_hu6839e04a3de296abde2906d1a32c149f_203941_270x270_fill_q75_lanczos_center.jpg" alt="João Matheus S. Krüger Taborda Hneda"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://joaomatheushneda.github.io/site/">João Matheus S. Krüger Taborda Hneda</a></h5>
+      <h6 class="card-subtitle">Estatístico | Pós-graduando em Ciência de Dados | Mestrando em Bioestatística</h6>
+      <p class="card-text">Tem interesse em assuntos relacionados à Estatística, Ciência de Dados, Modelos de Regressão, Dados Categóricos, Dados Longitudinais, Análise de Sobrevivência, Inferência Bayesiana, Machine Learning e Deep Learning.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/site/#contact" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="http://lattes.cnpq.br/0322866191774224" target="_blank" rel="noopener">
+        <i class="fas fa-graduation-cap"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/site/uploads/Curriculo_JM.pdf" >
+        <i class="fas fa-file-alt"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/JoaoMatheusHneda" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/joaomatheushneda/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/site/post/graf-inter-parte1/">Gráficos Interativos em R - Parte 1 - Plotly e DyGraphs</a></li>
+      
+      <li><a href="/site/post/graf-inter-parte2/">Gráficos Interativos em R - Parte 2 - Highcharter</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
+</article>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+  <p class="powered-by">
+    
+      <a href="/site/privacy/">Privacy Policy</a>
+    
+    
+       &middot; 
+      <a href="/site/terms/">Terms</a>
+    
+  </p>
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/site/js/vendor-bundle.min.3d946de2e8784a477845261d87025092.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/python.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/latex.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+      <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet.min.js" integrity="" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+
+    
+    
+    
+    <script id="page-data" type="application/json">{"use_headroom":true}</script>
+
+    
+    
+      <script src="/site/js/wowchemy-headroom.208bf5db800f4a4e5a38cf3b67a99a51.js" type="module"></script>
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/site/en/js/wowchemy.min.e49d0f2aa13983afa496558b2ed50fc1.js"></script>
+
+    
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+
+
+</body>
+</html>
