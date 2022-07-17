@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R | João Matheus Hneda</title>
+    <link>https://joaomatheushneda.github.io/site/category/r/</link>
+      <atom:link href="https://joaomatheushneda.github.io/site/category/r/index.xml" rel="self" type="application/rss+xml" />
+    <description>R</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 27 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://joaomatheushneda.github.io/site/media/icon_hub666e112c0998beeb7a2ec6a255d44fb_84749_512x512_fill_lanczos_center_3.png</url>
+      <title>R</title>
+      <link>https://joaomatheushneda.github.io/site/category/r/</link>
+    </image>
+    
+    <item>
+      <title>Gráficos Interativos em R - Parte 1 - Plotly e DyGraphs</title>
+      <link>https://joaomatheushneda.github.io/site/post/graf-inter-parte1/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://joaomatheushneda.github.io/site/post/graf-inter-parte1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gráficos Interativos em R - Parte 2 - Highcharter</title>
+      <link>https://joaomatheushneda.github.io/site/post/graf-inter-parte2/</link>
+      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://joaomatheushneda.github.io/site/post/graf-inter-parte2/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
