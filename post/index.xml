@@ -77,19 +77,13 @@
     </item>
     
     <item>
-      <title>Gráficos Interativos em R - Parte 1 - Plotly e DyGraphs</title>
-      <link>https://joaomatheushneda.github.io/site/post/graf-inter-parte1/</link>
-      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://joaomatheushneda.github.io/site/post/graf-inter-parte1/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Gráficos Interativos em R - Parte 2 - Highcharter</title>
-      <link>https://joaomatheushneda.github.io/site/post/graf-inter-parte2/</link>
-      <pubDate>Sat, 27 Jul 2019 00:00:00 +0000</pubDate>
-      <guid>https://joaomatheushneda.github.io/site/post/graf-inter-parte2/</guid>
-      <description></description>
+      <title></title>
+      <link>https://joaomatheushneda.github.io/site/post/graf-inter-parte2/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://joaomatheushneda.github.io/site/post/graf-inter-parte2/readme/</guid>
+      <description>&lt;h1 id=&#34;post-graficos_interativos_em_r&#34;&gt;Post-Graficos_Interativos_em_R&lt;/h1&gt;
+&lt;p&gt;Esse é um repositório para armazenar um post que foi desenvolvido dentro do PET-Estatística, cujo título é: &amp;ldquo;Gráficos Interativos em R&amp;rdquo;. Se caso for baixar os arquivos .html, é necessário que o seu computador tenha desempenho razoável para conseguir abrir.&lt;/p&gt;
+</description>
     </item>
     
   </channel>
